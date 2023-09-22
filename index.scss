@@ -1,0 +1,155 @@
+:root {
+  --gen_color: #d434fe;
+  --gradient: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  --bg: #150e28;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Clash Display;
+}
+*:is(::before, ::after) {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+}
+.navbar {
+  display: flex;
+  padding: 1.5rem 10% 1rem;
+  background: var(--bg);
+  justify-content: space-between;
+  border-bottom: 0.1px solid #bda7a799;
+}
+.navbar .span {
+  color: var(--gen_color);
+}
+.navbar a.logo {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+button {
+  all: unset;
+  color: white;
+  border: none;
+  padding: 0.6rem 2.7rem;
+  background: var(--gradient);
+  border-radius: 5px;
+  cursor: pointer;
+}
+div.more-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.2em;
+}
+div.more-nav_group a {
+  margin-right: 2.2rem;
+}
+
+/* hero-sections */
+section {
+  border-bottom: 0.1px solid #bda7a799;
+  min-height: 80vh;
+  // background: red;
+  .hero-contents {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-left: 10%;
+    // padding-bottom: 2rem;
+    // padding-right: 4%;
+
+    .hero-alpha {
+      padding-top: 8rem;
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .col {
+        color: var(--gen_color);
+      }
+      .get {
+        position: relative;
+      }
+      .bob {
+        position: absolute;
+        right: 1.8em;
+        top: -2.6rem;
+        transform: rotate(20deg);
+      }
+      p {
+        max-width: 42ch;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: Ubuntu;
+      }
+      p,
+      button {
+        margin-top: 1.4rem;
+      }
+      .timer {
+        margin-top: 3rem;
+      }
+    }
+  }
+  .hero-image {
+    position: relative;
+    padding-top: 2rem;
+    .virtual-reality {
+      width: auto;
+      height: 480px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .absolute-galaxy {
+      position: absolute;
+      top: 20;
+      left: 30px;
+      img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+div.helper-texts {
+  padding-top: 2%;
+  padding-inline: 10%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  .helper-texts_text > p {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: -2rem;
+    font-family: Poppins;
+  }
+  .star {
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+}
